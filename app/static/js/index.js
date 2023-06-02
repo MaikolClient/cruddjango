@@ -38,7 +38,10 @@ const lista_programadores = async () => {
                     <td>${programador.pais}</td>
                     <td>${programador.nacimiento}</td>
                     <td>${programador.puntuacion}</td>
-                    <td>${programador.puntuacion}</td>
+                    <td>${programador.puntuacion>= 8 
+                      ? "<i class='fa-solid fa-check' style='color: green;'></i>"
+                      : "<i class='fa-solid fa-xmark' style='color: green;'></i>" }
+                    </td>
                     <td>${programador.puntuacion}</td>
                 </tr>
             `;
