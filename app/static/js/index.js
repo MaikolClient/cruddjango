@@ -42,7 +42,10 @@ const lista_programadores = async () => {
                       ? "<i class='fa-solid fa-check' style='color: green;'></i>"
                       : "<i class='fa-solid fa-xmark' style='color: green;'></i>" }
                     </td>
-                    <td>${programador.puntuacion}</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
                 </tr>
             `;
     });
